@@ -1,4 +1,7 @@
-from Stusent import Student
+if __name__ == '__main__':
+    from Stusent import Student
+else:
+    from .Stusent import Student
 
 
 class Captain(Student):
