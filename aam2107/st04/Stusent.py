@@ -1,6 +1,6 @@
 if __name__ == '__main__':
     from ConsoleIO import WebIO, ConsoleIO
-else
+else:
     from .ConsoleIO import WebIO, ConsoleIO
 
 
