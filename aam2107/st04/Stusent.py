@@ -1,4 +1,7 @@
-from ConsoleIO import WebIO, ConsoleIO
+if __name__ == '__main__':
+    from ConsoleIO import WebIO, ConsoleIO
+else
+    from .ConsoleIO import WebIO, ConsoleIO
 
 
 class Student:
