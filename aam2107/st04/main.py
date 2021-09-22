@@ -1,4 +1,7 @@
-from kartoteka import MenuCartoteka
+if __name__ == '__main__':
+    from kartoteka import MenuCartoteka
+else:
+    from .kartoteka import MenuCartoteka
 
 cart = MenuCartoteka()
 container = {
