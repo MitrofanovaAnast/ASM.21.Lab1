@@ -21,10 +21,8 @@ def main():
     print("------------------------------")
     return int(input())
 
-
-if __name__ == '__main__':
-    try:
-        while True:
-            container[main()][1]()
-    except Exception as ex:
-        print(ex, "\nbye")
+try:
+    while True:
+        container[main()][1]()
+except Exception as ex:
+    print(ex, "\nbye")
