@@ -1,7 +1,14 @@
-from ConsoleIO import ConsoleIO as CI
-from FileIO import FileOutputPickle, FileOutputShelve
-from Stusent import Student as St
-from Captain import Captain as Cap
+if __name__ == '__main__':
+	from ConsoleIO import ConsoleIO as CI
+	from FileIO import FileOutputPickle, FileOutputShelve
+	from Stusent import Student as St
+	from Captain import Captain as Cap
+else:
+	from .ConsoleIO import ConsoleIO as CI
+	from .FileIO import FileOutputPickle, FileOutputShelve
+	from .Stusent import Student as St
+	from .Captain import Captain as Cap
+	
 
 
 class MenuCartoteka:
