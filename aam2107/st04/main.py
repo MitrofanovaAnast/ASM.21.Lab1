@@ -15,15 +15,15 @@ container = {
 
 
 def main():
-    print("------------------------------")
-    for i, item in container.items():
-        print(i, ": ", item[0])
-    print("------------------------------")
-    return int(input())
-
-if __name__ == '__main__':
     try:
         while True:
-            container[main()][1]()
+            print("------------------------------")
+            for i, item in container.items():
+                print(i, ": ", item[0])
+            print("------------------------------")
+            container[int(input())][1]()
     except Exception as ex:
         print(ex, "\nbye")
+
+if __name__ == '__main__':
+    main()
