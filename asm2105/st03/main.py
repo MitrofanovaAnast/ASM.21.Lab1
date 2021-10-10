@@ -5,7 +5,7 @@ else:
 
 
 def main():
-    print('testLiana')
+    group().f()
 
 
 if __name__ == '__main__':
