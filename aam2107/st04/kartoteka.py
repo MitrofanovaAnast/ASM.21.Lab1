@@ -12,7 +12,7 @@ class MenuKartoteka:
 		case = int(input("0 - Работник, 1  - Начальник: \n"))
 		employee = Chief() if case else Employee()
 		employee.input()
-		self.__cart.append(student)
+		self.__cart.append(employee)
 
 	def change(self):
 		index = int(input("Введите номер работника (начиная с 1)"))
