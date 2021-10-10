@@ -1,5 +1,5 @@
-from group import Group
-from consoleIO import ConsoleIO
+from .group import Group
+from .consoleIO import ConsoleIO
 
 def main():
 	group = Group()

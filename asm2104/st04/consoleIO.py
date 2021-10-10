@@ -1,5 +1,5 @@
-from student import Student 
-from head import Head 
+from .student import Student 
+from .head import Head 
 
 class ConsoleIO:
     def output(self,newList):

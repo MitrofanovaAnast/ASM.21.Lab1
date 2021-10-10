@@ -1,4 +1,4 @@
-from student import Student
+from .student import Student
 
 class Head(Student):
     def __init__(self):

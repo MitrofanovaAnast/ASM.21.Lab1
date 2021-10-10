@@ -1,9 +1,9 @@
 import pickle
 
-from fileIO import FileIO
-from consoleIO import ConsoleIO
-from student import Student 
-from head import Head 
+from .fileIO import FileIO
+from .consoleIO import ConsoleIO
+from .student import Student 
+from .head import Head 
 
 class Group:
     def __init__(self):
