@@ -2,7 +2,6 @@ from .FileIO import FileOutputPickle
 from .Employee import Employee
 from .Chief import Chief
 	
-
 class MenuKartoteka:
 	def __init__(self, strategy=FileOutputPickle()):
 		self.__cart = []
