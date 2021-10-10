@@ -1,9 +1,9 @@
-﻿import aam2107.st14.lab1.main
-import aam2107.st14.lab2.main
+﻿import aam2107.st13.lab1.main
+import aam2107.st13.lab2.main
 
 MENU = [
-		["Lab1", aam2107.st14.lab1.main.main],
-		["Lab2", aam2107.st14.lab2.main.main]
+		["Lab1", aam2107.st13.lab1.main.main],
+		["Lab2", aam2107.st13.lab2.main.main]
 ]
 
 def menu():
