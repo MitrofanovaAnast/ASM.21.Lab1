@@ -1,5 +1,5 @@
-from asm2104.st13.headman import Headman
-from asm2104.st13.student import Student
+from asm2104.st14.headman import Headman
+from asm2104.st14.student import Student
 
 elementTypes = [
     {'text': 'Добавить старосту', 'class': Headman},
