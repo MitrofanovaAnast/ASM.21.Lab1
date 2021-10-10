@@ -18,10 +18,10 @@ strategy_dict = {
 
 
 class Team:
+    strategy = ConsoleIO
 
-    def __init__(self, strategy, members=[]):
+    def __init__(self, members=[]):
         self.members = members
-        self.strategy = strategy
 
     def add_member(self):
         for i, item in member_type.items():

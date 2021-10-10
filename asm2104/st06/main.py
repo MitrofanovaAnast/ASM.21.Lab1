@@ -8,7 +8,7 @@ import sys
 from asm2104.st06 import ConsoleIO
 from asm2104.st06.Team import Team
 
-Team = Team(ConsoleIO)
+Team = Team()
 
 act_menu = {
     1: ('Add member', Team.add_member),
