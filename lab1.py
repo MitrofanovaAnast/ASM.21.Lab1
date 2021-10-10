@@ -14,6 +14,7 @@ import asm2105.st03.main
 import asm2105.st02.main
 import asm2104.st12.main
 import asm2105.st14.main
+import asm2104.st11.main
 import asm2104.st15.main
 import asm2104.st16.main
 import asm2104.st08.main
@@ -33,6 +34,7 @@ MENU = [
 		["[2107-00] Gladkov", aam2107.st03.main.main],
 		["[2105-04] Dautov", asm2105.st04.main.main],
 		["[2104-06] Kim", asm2104.st06.main.main],
+		["[2104-11] Lutskovich", asm2104.st11.main.main],
 		["[2104-14] Pezhemsky", asm2104.st14.main.main],
 		["[2104-04] Devin", asm2104.st04.main.main],
 		["[2105-20 Kharisov", asm2105.st20.main.main],
