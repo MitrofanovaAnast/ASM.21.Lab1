@@ -4,6 +4,7 @@ import aam2107.st00.main
 #import aam2107.st14.main
 import aam2107.st03.main
 import asm2105.st04.main
+import asm2104.st06.main
 import asm2104.st13.main
 #	добавить импорт своего модуля по шаблону
 #	import asm<код группы>.st<номер по журналу>.main
@@ -17,6 +18,7 @@ MENU = [
 		#["[2107-00] Sudakov", aam2107.st14.main.main],
 		["[2107-00] Gladkov", aam2107.st03.main.main],
 		["[2105-04] Dautov", asm2105.st04.main.main],
+		["[2104-06] Kim", asm2104.st06.main.main],
 		["[2104-13] Pezhemsky", asm2104.st13.main.main],
 ]
 
