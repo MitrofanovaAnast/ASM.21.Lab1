@@ -9,3 +9,5 @@ class student(item):
         text=super().__str__()
         text+=f'Группа: {self.group}\n'
         return text
+
+

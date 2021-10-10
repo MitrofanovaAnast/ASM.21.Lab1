@@ -9,3 +9,5 @@ class worker(item):
         text=super().__str__()
         text+=f'Стаж: {self.experience}\n'
 
+
+
