@@ -5,10 +5,10 @@ else:
 
 
 def main():
-    group().f()
+	group().f()
 
 
 if __name__ == '__main__':
-    main()
+	main()
 
 
