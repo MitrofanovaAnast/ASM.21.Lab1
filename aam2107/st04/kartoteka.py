@@ -10,8 +10,8 @@ class MenuKartoteka:
 
 	def add(self):
 		case = int(input("0 - Работник, 1  - Начальник: \n"))
-		student = Chief() if case else Employee()
-		student.input()
+		employee = Chief() if case else Employee()
+		employee.input()
 		self.__cart.append(student)
 
 	def change(self):
