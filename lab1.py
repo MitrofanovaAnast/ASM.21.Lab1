@@ -55,3 +55,8 @@ def menu():
 		print("{0:2}. {1}".format(i, item[0]))
 	print("------------------------------")
 	return int(input())
+ try:
+    	while True:
+    		sorted(MENU)[menu()][1]()
+    except Exception as ex:
+    	print(ex, "\nbye")
