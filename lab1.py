@@ -21,6 +21,7 @@ import asm2104.st08.main
 import asm2104.st06.main
 import asm2105.st18.main
 import asm2104.st18.main
+import asm2104.st19.main
 # import asm2104.st13.main
 #	добавить импорт своего модуля по шаблону
 #	import asm<код группы>.st<номер по журналу>.main
@@ -48,7 +49,8 @@ MENU = [
 		['[2104-16] Saichkina', asm2104.st16.main.main],
 		["[2104-08] Korotkova", asm2104.st08.main.main],
 		["[2105-18] Tukhvatullina", asm2105.st18.main.main],
-		["[2104-18] Terenteva", asm2104.st18.main.main]
+		["[2104-18] Terenteva", asm2104.st18.main.main],
+		["[2104-19] Shayakhmetova", asm2104.st19.main.main]
 		# ["[2104-13] Migranov", asm2104.st13.main.main],
 ]
 def menu():
