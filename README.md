@@ -16,3 +16,8 @@ https://help.github.com/articles/syncing-a-fork/
 4. Не удаляйте файл __init__.py
 5. Не используйте функцию Upload files на сайте, если не представляете, какие файлы являются лишними.
 6. Сдающему, за которым придется вычищать мусор в проекте и/или восстанавливать его работоспособность, потеря баллов обеспечена.
+
+
+Текущая успеваемость:
+
+https://docs.google.com/spreadsheets/d/1M-ZJLYaIIFy_uXuLck_HZogo_Vd8sEZztgkEWhsXYoM/edit?usp=sharing
