@@ -1,9 +1,10 @@
 from .item import item
 
 class student(item):
-    group=''
+
     def __init__(self, strategy):
         item.__init__(self, strategy)
+        self.group=''
 
     def __str__(self):
         text=super().__str__()

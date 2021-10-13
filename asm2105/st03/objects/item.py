@@ -1,11 +1,10 @@
 
 class item:
-    id=-1
-    name=''
-    age=int()
-
     def __init__(self, strategy):
-        self.strategy=strategy
+        self.id = -1
+        self.name = ''
+        self.age = int()
+        self.strategy=strategy()
 
     def __str__(self):
         text=f'Номер: {self.id}\n' \
@@ -14,8 +13,8 @@ class item:
         return text
 
     def set(self):
-        pass
+        self.strategy.set(self)
 
     def get(self):
-        pass
+        self.strategy.get(self)
 
