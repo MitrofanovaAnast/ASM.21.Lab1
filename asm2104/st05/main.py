@@ -4,7 +4,7 @@
 CMD: python main.py
 
 person.py - Описание сущностей
-storage.py - Описание стратегий хранения
+pickleStrategy.py - Описание стратегий хранения
 inp_out.py - Описание стратегий ввода вывода
 group.py - контекст
 
