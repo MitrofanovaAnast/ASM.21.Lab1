@@ -68,16 +68,16 @@ def main():
                                 '2. Employes\n'
                                 '3. All users\n'))
                 if ch2 == 1:
-                    for member in cont.users:
-                        if isinstance(member, student):
-                            member.output(Console)
+                    for user in cont.users:
+                        if isinstance(user, student):
+                            user.output(Console)
                 elif ch2 == 2:
-                    for member in cont.users:
-                        if isinstance(member, employe):
-                            member.output(Console)
+                    for user in cont.users:
+                        if isinstance(user, employe):
+                            user.output(Console)
                 elif ch2 == 3:
-                    for member in cont.users:
-                        member.output(Console)
+                    for user in cont.users:
+                        user.output(Console)
             elif choice == 4:
                 cont.clr()
             elif choice == 5:
