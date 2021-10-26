@@ -24,6 +24,7 @@ import asm2104.st18.main
 import asm2104.st19.main
 import asm2104.st03.main
 import asm2104.st22.main
+import asm2104.st09.main
 #import asm2105.st12.main
 # import asm2104.st13.main
 #	добавить импорт своего модуля по шаблону
@@ -55,6 +56,7 @@ MENU = [
 		["[2104-18] Terenteva", asm2104.st18.main.main],
 		["[2104-19] Shayakhmetova", asm2104.st19.main.main],
 		["[2104-03] Gilev", asm2104.st03.main.main],
+		["[2104-09] Litvinenko", asm2104.st09.main.main],
 #        ["[2104-22] Zhamankina", asm2104.st22.main.main],
 		# ["[2104-13] Migranov", asm2104.st13.main.main],
 #		["[2105-12] Panov", asm2105.st12.main.main],
