@@ -1,4 +1,4 @@
-from .developer import Developer
+from asm2104.st09.developer import Developer
 
 
 class TeamLeader(Developer):

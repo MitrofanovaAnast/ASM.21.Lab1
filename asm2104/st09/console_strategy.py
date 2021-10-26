@@ -1,5 +1,5 @@
-from .developer import Developer
-from .team_leader import TeamLeader
+from asm2104.st09.developer import Developer
+from asm2104.st09.team_leader import TeamLeader
 
 
 menuList = [

@@ -3,10 +3,9 @@ from .company import Company
 
 company = Company([])
 menuList = [
-    {'label': 'Добавить элементы вручную', 'handler': company.addElements},
-    {'label': 'Вывести список элементов в консоль', 'handler': company.printElements},
-    {'label': 'Загрудить из файла', 'handler': company.loadElements},
-    {'label': 'Сохранить в файл', 'handler': company.saveElements},
+    {'label': 'Добавить элементы', 'handler': company.setElements},
+    {'label': 'Вывести список элементов', 'handler': company.getElements},
+    {'label': 'Выбрать стратегию', 'handler': company.chooseStrategy},
     {'label': 'Очистить список элементов', 'handler': company.clearAllElements},
 ]
 
