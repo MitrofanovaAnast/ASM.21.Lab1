@@ -25,6 +25,7 @@ import asm2104.st19.main
 import asm2104.st03.main
 import asm2104.st22.main
 import asm2104.st09.main
+import asm2104.st20.main
 import asm2105.st10.main
 #import asm2105.st12.main
 # import asm2104.st13.main
