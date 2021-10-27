@@ -1,8 +1,8 @@
 import sys
-from strategy_storage import Storage
-from strategy_io import IO
-from student import Student
-from headmen import Headmen
+from .strategy_storage import Storage
+from .strategy_io import IO
+from .student import Student
+from .headmen import Headmen
 
 
 class Group:
