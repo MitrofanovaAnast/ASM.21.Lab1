@@ -12,7 +12,7 @@ class BaseStrategy(ABC):
 class Strategy(BaseStrategy):
     def set(self, obj):
         for key in obj.__dict__.keys():
-            if key!= 'id' and key != "strategy":
+            if key!= 'id' and key != "strategy" and key!='type':
                 obj.__dict__[key] = input(f'Введите {key}\n')
 
     def get(self, obj):
