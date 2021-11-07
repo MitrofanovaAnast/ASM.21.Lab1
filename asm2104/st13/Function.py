@@ -1,5 +1,11 @@
-from Adaptation import Adaptation
-from Original import Original
+if __name__ == '__main__':
+
+    from Adaptation import Adaptation
+    from Original import Original
+else:
+    from .Adaptation import Adaptation
+    from .Original import Original
+    
 import pickle
     
 class Simple():

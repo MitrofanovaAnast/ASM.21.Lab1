@@ -2,8 +2,8 @@ from .worker import worker
 
 class zavkaf(worker):
 
-    def __init__(self, strategy):
-        worker.__init__(self, strategy)
+    def __init__(self, strategy, type='zavkaf'):
+        worker.__init__(self, strategy, type)
         self.phone=''
 
     def __str__(self):

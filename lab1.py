@@ -7,6 +7,7 @@ import asm2105.st04.main
 import asm2104.st12.main
 import asm2104.st14.main
 import asm2104.st04.main
+import aam2107.st11.main
 import asm2105.st20.main
 import aam2107.st04.main
 import asm2105.st15.main
@@ -24,8 +25,11 @@ import asm2104.st18.main
 import asm2104.st19.main
 import asm2104.st03.main
 import asm2104.st22.main
-import asm2105.st12.main
-# import asm2104.st13.main
+import asm2104.st09.main
+import asm2104.st20.main
+import asm2105.st10.main
+#import asm2105.st12.main
+import asm2104.st13.main
 #	добавить импорт своего модуля по шаблону
 #	import asm<код группы>.st<номер по журналу>.main
 MENU = [
@@ -37,6 +41,7 @@ MENU = [
 #		["[2107-13] Sudakov", aam2107.st13.main.main],
 		["[2107-03] Gladkov", aam2107.st03.main.main],
 		["[2105-04] Dautov", asm2105.st04.main.main],
+	        ["[2107-11] Sakina", aam2107.st11.main.main],
 		["[2104-06] Kim", asm2104.st06.main.main],
 		["[2104-11] Lutskovich", asm2104.st11.main.main],
 		["[2104-14] Pezhemsky", asm2104.st14.main.main],
@@ -55,9 +60,12 @@ MENU = [
 		["[2104-18] Terenteva", asm2104.st18.main.main],
 		["[2104-19] Shayakhmetova", asm2104.st19.main.main],
 		["[2104-03] Gilev", asm2104.st03.main.main],
-        ["[2104-22] Zhamankina", asm2104.st22.main.main],
-		# ["[2104-13] Migranov", asm2104.st13.main.main],
-		["[2105-12] Panov", asm2105.st12.main.main],
+		["[2104-09] Litvinenko", asm2104.st09.main.main],
+		["[2105-10] Maksimovich", asm2105.st10.main.main],
+        ["[2104-20] Yunitskiy", asm2104.st20.main.main],
+#        ["[2104-22] Zhamankina", asm2104.st22.main.main],
+		["[2104-13] Migranov", asm2104.st13.main.main],
+#		["[2105-12] Panov", asm2105.st12.main.main],
 ]
 def menu():
 	print("------------------------------")

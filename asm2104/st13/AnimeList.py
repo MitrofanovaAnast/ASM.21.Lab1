@@ -1,8 +1,11 @@
-﻿
-from Adaptation import Adaptation
-from Original import Original
-from Function import Simple, Editing, PickleDump, PickleLoad
-
+if __name__ == '__main__':
+    from Adaptation import Adaptation
+    from Original import Original
+    from Function import Simple, Editing, PickleDump, PickleLoad
+else:
+    from .Adaptation import Adaptation
+    from .Original import Original
+    from .Function import Simple, Editing, PickleDump, PickleLoad
 class AnimeList:
     def __init__(self):
         self.strategy=Simple()
