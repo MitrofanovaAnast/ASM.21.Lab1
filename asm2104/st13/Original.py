@@ -1,5 +1,8 @@
-from Adaptation import Adaptation
-
+if __name__ == '__main__':
+    from Adaptation import Adaptation
+else: 
+    from .Adaptation import Adaptation
+    
 class Original(Adaptation):
     def __init__(self, name='', episodenum=24, genre=''):
         self.name=name
