@@ -19,82 +19,177 @@ def show_menu():
           '4. Удалить все\n')
 
 
+
+def show(rgu):
+    text = 'Какой список вы хотите увидеть?\n' \
+          '1. Все\n' \
+          '2. Студенты\n' \
+          '3. Только старосты\n' \
+          '4. Сотрудники\n' \
+          '5. Деканы\n'
+    inp = int(input(text))
+    if inp == 1:
+        for member in rgu.members.values():
+            member.print()
+            print('---\n')
+    elif inp == 2:
+        for member in rgu.members.values():
+            if isinstance(member, Student):
+                member.print()
+                print('---\n')
+    elif inp == 3:
+        for member in rgu.members.values():
+            if isinstance(member, Starosta):
+                member.print()
+                print('---\n')
+    elif inp == 4:
+        for member in rgu.members.values():
+            if isinstance(member, Staff):
+                member.print()
+                print('---\n')
+    elif inp == 5:
+        for member in rgu.members.values():
+            if isinstance(member, Decan):
+                member.print()
+                print('---\n')
+
+def add(rgu):
+    text = 'Кого Вы хотите добавить?\n' \
+           '1. Студент\n' \
+           '2. Староста\n' \
+           '3. Сотрудник\n' \
+           '4. Декан\n'
+
+    inp = int(input(text))
+    if inp == 1:
+        obj = Student(ConsoleGetSet)
+    elif inp == 2:
+        obj = Starosta(ConsoleGetSet)
+    elif inp == 3:
+        obj = Staff(ConsoleGetSet)
+    elif inp == 4:
+        obj = Decan(ConsoleGetSet)
+    else:
+        return
+
+    obj.set()
+    rgu.add_member(obj)
+
+
+def search(rgu):
+    number = input('Введите номер\n')
+    member = rgu.get_by_num(number)
+    if member is not None:
+        print(str(member))
+    else:
+        print('Человек не найден')
+
+def clear(rgu):
+    rgu.clear()
+
+menu={
+    1:['Посмотреть', show],
+    2:['Добавить', add],
+    3:['Поиск по номеру', search],
+    4:['Удалить все', clear],
+    5:['Выход']
+}
+
+
+
 def main():
     while True:
         try:
             rgu=RGU(PickleStorage)
 
-            show_menu()
-            choice=int(input())
-            if choice==1:
-                text='Какой список вы хотите увидеть?\n' \
-                     '1. Все\n' \
-                     '2. Студенты\n' \
-                     '3. Только старосты\n' \
-                     '4. Сотрудники\n' \
-                     '5. Деканы\n'
-                inp=int(input(text))
-                if inp==1:
-                    for member in rgu.members.values():
-                        member.print()
-                        print('---\n')
-                elif inp==2:
-                    for member in rgu.members.values():
-                        if isinstance(member, Student):
-                            member.print()
-                            print('---\n')
-                elif inp==3:
-                    for member in rgu.members.values():
-                        if isinstance(member, Starosta):
-                            member.print()
-                            print('---\n')
-                elif inp==4:
-                    for member in rgu.members.values():
-                        if isinstance(member, Staff):
-                            member.print()
-                            print('---\n')
-                elif inp==5:
-                    for member in rgu.members.values():
-                        if isinstance(member, Decan):
-                            member.print()
-                            print('---\n')
+            for key, value in menu.items():
+                print(f'{key}. {value[0]}')
 
-            elif choice==2:
-                text = 'Кого Вы хотите добавить?\n' \
-                       '1. Студент\n' \
-                       '2. Староста\n' \
-                       '3. Сотрудник\n' \
-                       '4. Декан\n'
-
-                inp=int(input(text))
-                if inp==1:
-                    obj=Student(ConsoleGetSet)
-                elif inp==2:
-                    obj=Starosta(ConsoleGetSet)
-                elif inp==3:
-                    obj=Staff(ConsoleGetSet)
-                elif inp==4:
-                    obj=Decan(ConsoleGetSet)
-                else:
-                    continue
-
-                obj.set()
-                rgu.add_member(obj)
-            elif choice==3:
-                number=input('Введите номер\n')
-                member=rgu.get_by_num(number)
-                if member is not None:
-                    print(str(member))
-                else:
-                    print('Человек не найден')
-
-            elif choice==4:
-                rgu.clear()
-
-            else:
+            action=int(input())
+            if action==5:
+                break
+            elif action<1 or action>5:
                 continue
+            else:
+                menu[action][1](rgu)
+                rgu.save()
 
-            rgu.save()
+
+
+
+            # rgu=RGU(PickleStorage)
+            #
+            # show_menu()
+            # choice=int(input())
+            # if choice==1:
+            #     text='Какой список вы хотите увидеть?\n' \
+            #          '1. Все\n' \
+            #          '2. Студенты\n' \
+            #          '3. Только старосты\n' \
+            #          '4. Сотрудники\n' \
+            #          '5. Деканы\n'
+            #     inp=int(input(text))
+            #     if inp==1:
+            #         for member in rgu.members.values():
+            #             member.print()
+            #             print('---\n')
+            #     elif inp==2:
+            #         for member in rgu.members.values():
+            #             if isinstance(member, Student):
+            #                 member.print()
+            #                 print('---\n')
+            #     elif inp==3:
+            #         for member in rgu.members.values():
+            #             if isinstance(member, Starosta):
+            #                 member.print()
+            #                 print('---\n')
+            #     elif inp==4:
+            #         for member in rgu.members.values():
+            #             if isinstance(member, Staff):
+            #                 member.print()
+            #                 print('---\n')
+            #     elif inp==5:
+            #         for member in rgu.members.values():
+            #             if isinstance(member, Decan):
+            #                 member.print()
+            #                 print('---\n')
+            #
+            # elif choice==2:
+            #     text = 'Кого Вы хотите добавить?\n' \
+            #            '1. Студент\n' \
+            #            '2. Староста\n' \
+            #            '3. Сотрудник\n' \
+            #            '4. Декан\n'
+            #
+            #     inp=int(input(text))
+            #     if inp==1:
+            #         obj=Student(ConsoleGetSet)
+            #     elif inp==2:
+            #         obj=Starosta(ConsoleGetSet)
+            #     elif inp==3:
+            #         obj=Staff(ConsoleGetSet)
+            #     elif inp==4:
+            #         obj=Decan(ConsoleGetSet)
+            #     else:
+            #         continue
+            #
+            #     obj.set()
+            #     rgu.add_member(obj)
+            # elif choice==3:
+            #     number=input('Введите номер\n')
+            #     member=rgu.get_by_num(number)
+            #     if member is not None:
+            #         print(str(member))
+            #     else:
+            #         print('Человек не найден')
+            #
+            # elif choice==4:
+            #     rgu.clear()
+            #
+            # else:
+            #     continue
+            #
+            # rgu.save()
         except:
             pass
 
