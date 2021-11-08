@@ -1,9 +1,10 @@
 
 class user:
-    def __init__(self):
+    def __init__(self, type='user'):
         self.id = -1
         self.name = ''
         self.age = int()
+        self.type=type
 
     def __str__(self):
         text = f'Number: {self.id}\n' \

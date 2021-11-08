@@ -1,8 +1,8 @@
 from .employe import employe
 
 class dean(employe):
-    def __init__(self):
-        employe.__init__(self, 'Dean')
+    def __init__(self, type='dean'):
+        employe.__init__(self, 'Dean', type)
         self.phone = ''
 
     def __str__(self):

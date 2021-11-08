@@ -1,8 +1,8 @@
 from .student import student
 
 class proforg(student):
-    def __init__(self):
-        student.__init__(self)
+    def __init__(self, type='proforg'):
+        student.__init__(self, type)
         self.profileTicketNumber = int()
 
     def __str__(self):
