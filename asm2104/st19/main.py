@@ -118,7 +118,7 @@ menu={
 def main():
     while True:
         try:
-            for key, value in menu:
+            for key, value in menu.items():
                 print(f'{key}. {value[0]}')
 
             choice=int(input())

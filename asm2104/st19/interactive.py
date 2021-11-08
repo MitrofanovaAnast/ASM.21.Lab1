@@ -8,5 +8,5 @@ class interactiveConsole:
 
     def input(self):
         for key in self.obj.__dict__.keys():
-            if key!='number' and key!='position':
+            if key!='number' and key!='position' and key!='type':
                 self.obj.__dict__[key] = input(f'Input {key}\n')
