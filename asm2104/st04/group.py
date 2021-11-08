@@ -8,9 +8,11 @@ from .head import Head
 class Group:
     def __init__(self):
         self.list = []
+        self.strategy=ConsoleIO()
 
     def addElement(self):
-        self.inputList(ConsoleIO())
+        self.changeStrategy(ConsoleIO())
+        self.inputList()
         
 
     def clearList(self):
@@ -38,21 +40,28 @@ class Group:
             else:
                 self.list[n].inputProperties()
 
-    def outputList(self,strategy):
-        strategy.output(self.list)
+    def outputList(self):
+        self.strategy.output(self.list)
 
-    def inputList(self,strategy):
-        return strategy.input(self.list)
+    def inputList(self):
+        return self.strategy.input(self.list)
 
     def outputConsole(self):
         self.strategy=ConsoleIO
         if(len(self.list)==0):
             print('Список пуст')
         else:
-            self.outputList(ConsoleIO())
+            self.changeStrategy(ConsoleIO())
+            self.outputList()
+
+    def changeStrategy(self,newStrategy):
+        self.strategy=newStrategy
+
 
     def outputFile(self):
-        self.outputList(FileIO())
+        self.changeStrategy(FileIO())
+        self.outputList()
 
     def inputFile(self):
-        self.list=self.inputList(FileIO())
+        self.changeStrategy(FileIO())
+        self.list=self.inputList()
