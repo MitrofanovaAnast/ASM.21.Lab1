@@ -1,8 +1,8 @@
 from .user import user
 
 class student(user):
-    def __init__(self):
-        user.__init__(self)
+    def __init__(self, type='student'):
+        user.__init__(self, type)
         self.group=''
         self.course=int()
 

@@ -1,8 +1,8 @@
 from .student import student
 
 class starosta(student):
-    def __init__(self):
-        student.__init__(self)
+    def __init__(self, type='student'):
+        student.__init__(self, type)
         self.groupEmail=''
 
     def __str__(self):

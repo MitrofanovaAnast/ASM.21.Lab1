@@ -1,8 +1,8 @@
 from .worker import worker
 
 class chef(worker):
-    def __init__(self):
-        worker.__init__(self, 'Chef')
+    def __init__(self, type='worker'):
+        worker.__init__(self, 'Chef', type)
         self.phone = ''
 
     def __str__(self):

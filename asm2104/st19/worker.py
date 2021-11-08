@@ -1,8 +1,8 @@
 from .user import user
 
 class worker(user):
-    def __init__(self, position='Worker'):
-        user.__init__(self)
+    def __init__(self, position='Worker', type='worker'):
+        user.__init__(self, type)
         self.salary=int()
         self.position=position
 
