@@ -6,7 +6,7 @@ menu = [
     {'label': 'Очистить фармацевтов', 'method': pharmacy.clearEmployees},
     {'label': 'Записать/вывести', 'method': pharmacy.showEmployees},
     {'label': 'Считать', 'method': pharmacy.getEmployees},
-    {'label': 'Изменить стратегию', 'method': pharmacy.changeStrategy},
+    {'label': 'Изменить метод', 'method': pharmacy.changeStrategy},
     {'label': 'Выйти'},
 ]
 
